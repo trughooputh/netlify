@@ -19,3 +19,14 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'about-me'
+    label: 'About me'
+    format: 'json'
+    folder: 'assets/content/about-me'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Body FR', name: 'body-fr', widget: 'markdown' }
+      - { label: 'Body EN', name: 'body-en', widget: 'markdown' }
